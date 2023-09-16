@@ -29,9 +29,9 @@
     <!-- <div class="page-container animate__animated animate__fadeInDown"> -->
 
       <nav id="desktop-nav">
-        <div class="logo ">Portafolio .</div>
+        <div class="logo">Portafolio .</div>
         <div>
-          <ul class="nav-links ">
+          <ul class="nav-links">
             <li><a href="#about" class="animate-on-load">Sobre mi</a></li>
             <li><a href="#experience" class="animate-on-load">Skills</a></li>
             <li><a href="#projects" class="animate-on-load">Proyectos</a></li>
@@ -565,5 +565,18 @@
       });
   };
 </script>
+</script>
+
+<script>
+  window.addEventListener('scroll', function() {
+  const nav = document.querySelector('#desktop-nav');
+  if (window.scrollY > 0) {
+    nav.classList.add('nav-scrolled');
+  } else {
+    nav.classList.remove('nav-scrolled');
+  }
+});
+</script>
+
 </body>
 </html> 

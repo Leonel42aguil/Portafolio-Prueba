@@ -42,6 +42,14 @@ nav {
 
 }
 
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+  position: relative;
+  top: -45px;
+}
+
 .entry-animation {
   opacity: 0; /* Inicialmente, oculta los elementos */
   transform: translateY(20px); /* Desplázalos hacia abajo */
@@ -50,13 +58,6 @@ nav {
 }
 
 
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-  position: relative;
-  top: -45px;
-}
 
 a {
   color: black;
