@@ -31,6 +31,16 @@ function restoreImage() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".entry-animation");
+
+  elements.forEach((element, index) => {
+    setTimeout(() => {
+      element.style.opacity = 1;
+      element.style.transform = "translateY(0)";
+    }, 300 * index); // Ajusta el valor para controlar la velocidad de entrada y el retraso entre elementos
+  });
+});
 
 
 

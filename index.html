@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-
+    <style>
+      /* Estilos adicionales para la animación */
+      .animate-on-load {
+          opacity: 0; /* Comienza con una opacidad de 0 para la animación */
+      }
+  </style>
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link rel="stylesheet" href="styles.css">
@@ -23,13 +28,13 @@
     <!-- <div class="page-container animate__animated animate__fadeInDown"> -->
 
       <nav id="desktop-nav">
-        <div class="logo">Portafolio .</div>
+        <div class="logo ">Portafolio .</div>
         <div>
-          <ul class="nav-links">
-            <li><a href="#about">Sobre mi</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
+          <ul class="nav-links ">
+            <li><a href="#about" class="animate-on-load">Sobre mi</a></li>
+            <li><a href="#experience" class="animate-on-load">Skills</a></li>
+            <li><a href="#projects" class="animate-on-load">Proyectos</a></li>
+            <li><a href="#contact" class="animate-on-load">Contacto</a></li>
           </ul> 
         </div>
       </nav>
@@ -55,20 +60,20 @@
 
             <img src="./assets/photo-redonda.jpg" alt="Leonel Aguilera" class="about-home" />
           </div>
-        </div>
+        </div> 
       <div class="section__text">
-        <p class="section__text__p1">Hola, me llamo</p>
-        <h1 class="title">Leonel Aguilera</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p1 animate-on-load">Hola, me llamo</p>
+        <h1 class="title animate-on-load">Leonel Aguilera</h1>
+        <p class="section__text__p2 animate-on-load">Frontend Developer</p>
         <div class="btn-container">
 
-          <button class="btn btn-color-2">
+          <button class="btn btn-color-2 animate-on-load">
             <a download="Leonel Aguilera-CV" href="Cv-PDF-leonel-Orden.pdf" >
               <span style="font-weight: bold;">Descargar CV</span>
             </a>
           </button>
           
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        <button class="btn btn-color-1 animate-on-load" onclick="location.href='./#contact'">
           Contacto Info
         </button>
 
@@ -544,6 +549,23 @@
       );
   };
   ReactDOM.render(<App />, document.getElementById('root'));
+</script>
+
+<script>
+  // Esta función se ejecutará cuando se cargue la página
+  window.onload = function () {
+      // Selecciona los elementos que deseas animar
+      const elementsToAnimate = document.querySelectorAll('.animate-on-load');
+
+      // Itera a través de los elementos y agrega una clase de animación con retraso
+      elementsToAnimate.forEach((element, index) => {
+          // Usamos un retraso para mostrar los elementos uno por uno
+          setTimeout(() => {
+              element.classList.add('animate__animated', 'animate__fadeInDown');
+              element.style.opacity = 1; // Establece la opacidad a 1 después de la animación
+          }, 800 * index); // 300ms de retraso entre elementos (ajusta esto según tus preferencias)
+      });
+  };
 </script>
 </body>
 </html> 
