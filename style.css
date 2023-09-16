@@ -228,18 +228,19 @@ section {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
+  width: 500px;
+  height: 500px; 
 }
 
 .profile-image img {
   display: block;
-  width: 150px; /* Ajusta el tamaño de la imagen según tus preferencias */
-  height: 150px; /* Ajusta el tamaño de la imagen según tus preferencias */
   object-fit: cover;
 }
 
 .profile-image:hover {
   transform: scale(1.05);
 }
+
 
 @media screen and (max-width: 768px) {
   .profile-image {
@@ -248,7 +249,6 @@ section {
   }
 }
 
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 
 .section__pic-container-home {
   height: 400px;
