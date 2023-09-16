@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <style>
       /* Estilos adicionales para la animación */
       .animate-on-load {
           opacity: 0; /* Comienza con una opacidad de 0 para la animación */
       }
-  </style>
- 
+  </style> 
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link rel="stylesheet" href="styles.css">
@@ -56,7 +57,7 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-          <div class="profile-image">
+          <div class="profile-image animate-on-load"> 
 
             <img src="./assets/photo-redonda.jpg" alt="Leonel Aguilera" class="about-home" />
           </div>
@@ -82,19 +83,19 @@
         <img
           src="./assets/linkedin.png"
           alt="My LinkedIn profile"
-          class="icon"
+          class="icon animate-on-load"
           onclick="window.open('https://www.linkedin.com/in/leonelchatard/', '_blank')"
         />
         <img
           src="./assets/github.png"
           alt="My Github profile"
-          class="icon"
+          class="icon animate-on-load"
           onclick="window.open('https://github.com/Leonel42aguil', '_blank')"
         />
         <img
           src="./assets/bxl-twitter.svg"
           alt="My Twitter profile"
-          class="icon"
+          class="icon animate-on-load"
           onclick="window.open('https://twitter.com/Leonelchatard', '_blank')"
         />
       </div>
@@ -114,24 +115,21 @@
         <div class="section-container-home">
           <div class="section__pic-container-home"">
             <div class="square-image" onmouseover="changeImage()" onmouseout="restoreImage()">
-              <!-- src="./assets/photo - edit.jpg"  -->
               <img
               src="./assets/photo - edit.jpg" 
               alt="Alternate profile picture"
               class="about-pic img2"
               />
-              <!-- class="about-pic" -->
               <img
               src="./assets/serio - edit.jpg" 
               alt="Profile picture"
               class="about-pic img1"
               />
 
-             <!-- class="about-pic img2" -->
             </div>
           </div>
           
-          <div class="about-details-container">
+          <div class="about-details-container ">
             <div class="about-containers">
             <div class="details-container">
               <img
@@ -139,7 +137,7 @@
               alt="Experience icon"
               class="icon"
               />
-              <h3>Educacion</h3>
+              <h3 class="">Educacion</h3>
               <h3>Francisco Oreglia</h3>
               <p>Bachiller en Economía y Administración <br />Titulo Secundario Completo</p>
             </div>
@@ -563,7 +561,7 @@
           setTimeout(() => {
               element.classList.add('animate__animated', 'animate__fadeInDown');
               element.style.opacity = 1; // Establece la opacidad a 1 después de la animación
-          }, 800 * index); // 300ms de retraso entre elementos (ajusta esto según tus preferencias)
+          }, 450 * index); // 300ms de retraso entre elementos (ajusta esto según tus preferencias)
       });
   };
 </script>
