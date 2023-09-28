@@ -25,6 +25,9 @@
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/react-icons@4.2.0/umd/react-icons.production.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="page-container fade-in-transition">
@@ -356,12 +359,12 @@
           </div>
         </div> 
       </div>
-      <img
+      <!-- <img
       src="./assets/arrow.png"
       alt="Arrow icon"
       class="icon arrow"
       onclick="location.href='./#projects'"
-      />
+      /> -->
     </section>
 
     <!-- <section id="projects">
@@ -469,22 +472,93 @@
 <br />
 <br />
 <br />
-<section id="portafolio" class="portafolio min-h-full w-full pb-8 pt-8">
-  <div class="portafolio_title flex flex-column gap-3 text-center">
-    <h1 class="text-3xl md:text-5xl">Mi Trabajo</h1>
-    <p class="text-gray-400 text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. In beatae asperiores quas dolor iste distinctio voluptatibus facilis amet veritatis aliquid reprehenderit, tenetur aspernatur ratione alias quia est at laboriosam adipisci? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae totam possimus tempore, nesciunt accusamus harum sint dolorem deserunt, illo nostrum sapiente rerum ratione earum modi perferendis ipsum odit? Non, vel?</p>
+<!--PORTFOLIO -->
+<section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+  <div class="portfolio__title flex flex-column gap-3 text-center">
+      <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
+      <p class="text-gray-400 text-sm md:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit ab mollitia optio quod
+          recusandae placeat aliquam veniam officiis cum quam eum architecto quidem
+      </p>
   </div>
-
-  <div class="portafolio_galery">
-    <div class="galery_categories mb-5 mt-5">
-      <ul class="flex list-none flex-wrap justify-content-center gap-3">
-        <li class="filter-item active" data-filter="all">Todos</li>
-        <li class="filter-item" data-filter="ecomerce">Ecomerce</li>
-        <li class="filter-item" data-filter="appDogs">AppDogs</li>
-        <li class="filter-item" data-filter="appClimall">AppClima</li>
-      </ul>
-    </div>
-
+  <div class="portfolio__gallery">
+      <div class="gallery__categories mb-5 mt-5">
+          <ul class="flex list-none flex-wrap justify-content-center gap-3">
+              <li class="filter-item active" data-filter="all">Todos</li>
+              <li class="filter-item " data-filter="gym">Gimnasio</li>
+              <li class="filter-item " data-filter="tours__Web">Tours web</li>
+              <li class="filter-item " data-filter="world__Tours">Inmobiliaria web</li>
+              <li class="filter-item " data-filter="e__commerce">E-commerce</li>
+          </ul>
+      </div>
+      <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+          <div class="project__card tours__Web">
+              <img src="./assets/proyecto-1.png" alt="">
+              <div class="overlay"></div>
+              <div
+                  class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                  <h2>Travel Tours</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                  </p>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+              </div>
+          </div>
+          <div class="project__card e__commerce">
+              <img src="./assets/proyecto-2.png" alt="">
+              <div class="overlay"></div>
+              <div
+                  class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                  <h2>Travel Tours</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                  </p>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+              </div>
+          </div>
+          <div class="project__card tours__Web">
+              <img src="./assets/proyecto-3.png" alt="">
+              <div class="overlay"></div>
+              <div
+                  class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                  <h2>Travel Tours</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                  </p>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+              </div>
+          </div>
+          <div class="project__card gym">
+              <img src="./assets/proyecto-4.jpeg" alt="">
+              <div class="overlay"></div>
+              <div
+                  class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                  <h2>Travel Tours</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                  </p>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+              </div>
+          </div>
+          <div class="project__card world__Tours">
+              <img src="./assets/proyecto-5.jpg" alt="">
+              <div class="overlay"></div>
+              <div
+                  class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                  <h2>Travel Tours</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                  </p>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+              </div>
+          </div>
+          <div class="project__card tours__Web">
+              <img src="./assets/proyecto-6.webp" alt="">
+              <div class="overlay"></div>
+              <div
+                  class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                  <h2>Travel Tours</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quae obcaecati amet
+                  </p>
+                  <span><i class="fa-solid fa-arrow-right-long"></i></span>
+              </div>
+          </div>
+      </div>
   </div>
 </section>
 
@@ -610,6 +684,32 @@
     nav.classList.remove('nav-scrolled');
   }
 });
+</script>
+
+<script>
+  const filterContainer = document.querySelector(".gallery__categories");
+  const galleryItems = document.querySelectorAll(".project__card");
+
+  filterContainer.addEventListener("click", (event) => {
+      if (event.target.classList.contains("filter-item")) {
+          filterContainer.querySelector(".active").classList.remove("active");
+          event.target.classList.add("active")
+          const filterValue = event.target.getAttribute("data-filter")
+          galleryItems.forEach(item => {
+              if (item.classList.contains(filterValue) || filterValue === "all") {
+                  item.classList.remove("hide")
+                  item.classList.add("show")
+              } else {
+                  item.classList.remove("show")
+                  item.classList.add("hide")
+              }
+          })
+      }
+  })
+
+  function scrollToSection(sectionId){
+      document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+  }
 </script>
 
 </body>
