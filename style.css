@@ -982,18 +982,18 @@ footer p {
   height: 100vh; /* Esto asegura que ocupe toda la altura de la ventana */
 }
 
-/* Tu código original */
+/* Tu código modificado */
 .gallery__categories ul li {
-  font-size: small;
+  font-size: medium; /* Aumenta el tamaño de la fuente */
   cursor: pointer;
 }
 .gallery__categories .filter-item.active {
-  border-bottom: 1px solid var(--secondary-bg-color);
+  border-bottom: 2px solid var(--secondary-bg-color); /* Hace el borde más grande */
 }
 
 .project__card {
-  width: 300px;
-  height: 350px;
+  width: 350px; /* Aumenta el ancho */
+  height: 400px; /* Aumenta la altura */
   display: block;
   position: relative;
 }
@@ -1006,8 +1006,8 @@ footer p {
 
 .project__card .overlay {
   background: rgba(255, 73, 0, 0.9);
-  backdrop-filter: blur(2.7px);
-  -webkit-backdrop-filter: blur(2.7px);
+  backdrop-filter: blur(4.7px); /* Aumenta el valor de desenfoque */
+  -webkit-backdrop-filter: blur(4.7px); /* Aumenta el valor de desenfoque */
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1030,7 +1030,7 @@ footer p {
 }
 
 .project__card .project__info p {
-  font-size: small;
+  font-size: medium; /* Aumenta el tamaño de la fuente */
   margin-top: 2rem;
 }
 
