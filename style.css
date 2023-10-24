@@ -80,11 +80,6 @@ a:hover {
   right: 35px;
 }
 
-.logo:hover {
-  cursor: pointer;
-  animation: bounceAndColor 0.5s ease infinite;
-}
-
 @keyframes bounceAndColor {
   0% {
     transform: translateY(0);
@@ -1088,5 +1083,112 @@ footer p {
   100% {
     opacity: 1;
   }
+}
+
+
+
+
+/* Estilos generales para el botón */
+.download-button {
+  display: inline-block;
+  background-color: #3498db; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 30px 20px; /* Espaciado interno del botón */
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para el enlace dentro del botón */
+.download-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos para el texto del botón */
+.download-button span {
+  font-weight: bold;
+}
+
+/* Estilos para el botón cuando el mouse está encima */
+.download-button:hover {
+  background-color: rebeccapurple; /* Cambia esto al color deseado para el hover */
+}
+
+
+
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #1f1c27; /* Cambia el color de fondo a un tono más oscuro */
+  background-size: 400%;
+  color: #fff;
+  border: none;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+} 
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+
+
+
+.boton {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton:hover::before {
+  transform: scaleX(1);
+}
+
+.boton-content {
+  position: relative;
+  z-index: 1;
+}
+
+.boton:hover {
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  ); /* Cambia el color al que desees al hacer hover */
+  transform: scale(1.05); /* Cambia la escala al hacer hover */
 }
 
