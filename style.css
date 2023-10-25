@@ -1085,14 +1085,15 @@ footer p {
 
  
 .button {
-  position: relative; 
-  width: 150px; 
-  height: 40px;
+  position: relative;
+  width: auto; /* Cambia esto a "auto" para que el ancho se ajuste automáticamente al contenido */
+  min-width: 190px; /* Establece un ancho mínimo para el botón */
+  height: 53px;
   cursor: pointer;
   display: flex;
   align-items: center;
   border: 1px solid #17795E;
-  background-color: #209978;
+  background-color: #66CDAA;
   overflow: hidden;
 }
 
@@ -1101,14 +1102,15 @@ footer p {
 }
 
 .button .button__text {
-  transform: translateX(22px);
+  transform: translateX(5px);
   color: #fff;
   font-weight: 600;
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
 }
 
 .button .button__icon {
   position: absolute;
-  transform: translateX(109px);
+  transform: translateX(149px);
   height: 100%;
   width: 39px;
   background-color: #17795E;
@@ -1141,4 +1143,8 @@ footer p {
 
 .button:active {
   border: 1px solid #146c54;
+}
+
+.button__icon--left {
+  transform: translateX(0); /* Mueve el segundo span completamente a la izquierda */
 }
