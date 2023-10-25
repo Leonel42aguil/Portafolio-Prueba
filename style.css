@@ -1102,7 +1102,7 @@ footer p {
 }
 
 .button .button__text {
-  transform: translateX(5px);
+  transform: translateX(16px);
   color: #fff;
   font-weight: 600;
   white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
@@ -1120,7 +1120,7 @@ footer p {
 }
 
 .button .svg {
-  width: 20px;
+  width: 24px;
   fill: #fff;
 }
 
@@ -1133,7 +1133,7 @@ footer p {
 }
 
 .button:hover .button__icon {
-  width: 148px;
+  width: 190px;
   transform: translateX(0);
 }
 
