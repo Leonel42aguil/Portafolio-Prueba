@@ -954,27 +954,30 @@ footer p {
   }
 }
 
-.btn-color-2 a {
+.btn-color-2 a { 
   text-decoration: none;
   color: #000000;
-}
+} 
 
 .btn-color-2 a:hover {
   color: #ffffff; 
 }
 
 
-
-
-
-/* ------- PORTFOLIO -------- */
+   .redd {
+     color: #17795E;
+   }
+  
+ 
+/* ------- Proyectos   -------- */
 
 /* Contenedor para centrar el contenido */
 .center-container {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   height: 100vh; /* Esto asegura que ocupe toda la altura de la ventana */
+  padding-top: 2vh; /* Ajusta la distancia desde la parte superior */ 
 }
 
 /* Tu código modificado */
@@ -988,8 +991,8 @@ footer p {
 }
 
 .project__card {
-  width: 400px; /* Aumenta el ancho */
-  height: 450px; /* Aumenta la altura */
+  width: 600px; /* Aumenta el ancho */
+  height: 450px; /* Aumenta la altura */ 
   display: block;
   position: relative;
   transition: transform 0.2s ease-in-out; /* Agrega una transición de escala */
@@ -999,7 +1002,7 @@ footer p {
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
+} 
 
 .project__card .overlay {
   background: rgba(255, 73, 0, 0.9);
@@ -1008,7 +1011,7 @@ footer p {
   position: absolute;
   height: 100%;
   width: 100%;
-  left: 0;
+  left: 0; 
   top: 0;
   bottom: 0;
   right: 0;
@@ -1036,14 +1039,7 @@ footer p {
   cursor: pointer;
 }
 
-/* .project__card:hover {
-  opacity: 0.9; 
-  transition: opacity 0.3s ease-in-out;
-} */
-/* .project__card:hover {
-  transform: rotateY(180deg); 
-  transition: transform 1.1s ease-in-out; 
-} */
+
 .project__card:hover {
   color: rebeccapurple; 
   background-color: #f0f0f0; 
