@@ -1056,11 +1056,11 @@ footer p {
 .project__card:hover .project__info {
   top: 50%;
   left: 50%;
-  opacity: 1;
+  opacity: 1; 
   pointer-events: unset;
 }
 
-.project__card:hover .overlay {
+.project__card:hover .overlay { 
   opacity: 1; 
 }
  
@@ -1082,16 +1082,15 @@ footer p {
 }
 
 /* Estilo al hacer hover en los elementos de filtrado */
-/* Estilo al hacer hover en los elementos de filtrado */
 .filter-item {
   background-color: transparent;
   border: 2px solid #15493C;
-  color: #15493C;
+  color: #606263;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
-}
+} 
 
 .filter-item:hover {
   background-color: #15493C;
