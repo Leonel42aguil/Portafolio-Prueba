@@ -431,10 +431,48 @@ section {
     margin: 10px auto;
   }
 }
+ 
 
 
+#socials-containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconn {
+  width: 65px; /* Ancho de los iconos */
+  height: 65px; /* Alto de los iconos */
+  margin: 15px; /* Espacio entre los iconos */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre los iconos */
+  transition: transform 0.2s; /* Agregar una transición suave al hacer hover */
+}
+
+.iconn:hover {
+  transform: scale(1.1); /* Escalar el icono al hacer hover */
+  transition: transform 0.2s; /* Agregar una transición suave al hacer hover */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra al hacer hover */
+}
 
 
+/* Estilos específicos para cada icono */
+#socials-containerr img[alt="My LinkedIn profile"] {
+  background-color: #0077B5; /* Color de fondo de LinkedIn */
+  border-radius: 50%; /* Hacer el icono redondo */
+}
+
+#socials-containerr img[alt="My Github profile"] {
+  background-color: #333; /* Color de fondo de Github */
+  border-radius: 50%; /* Hacer el icono redondo */
+}
+
+#socials-containerr img[alt="My Twitter profile"] {
+  background-color: #1DA1F2; /* Color de fondo de Twitter */
+  border-radius: 50%; /* Hacer el icono redondo */
+}
+
+
+/* ICONS */
 
 #socials-container {
   display: flex;
@@ -443,7 +481,6 @@ section {
   gap: 1rem;
 }
 
-/* ICONS */
 
 .icon {
   width: 65px; 
