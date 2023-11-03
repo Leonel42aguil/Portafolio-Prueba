@@ -1150,15 +1150,11 @@ footer p {
 
 
 
-
-
-
-
- 
+/**Boton de Descarga CV**/
 .button {
   position: relative;
-  width: auto; /* Cambia esto a "auto" para que el ancho se ajuste automáticamente al contenido */
-  min-width: 190px; /* Establece un ancho mínimo para el botón */
+  width: auto;
+  min-width: 190px;
   height: 53px;
   cursor: pointer;
   display: flex;
@@ -1168,15 +1164,26 @@ footer p {
   overflow: hidden;
 }
 
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #66CDAA;
+  z-index: -1;
+}
+
 .button, .button__icon, .button__text {
   transition: all 0.3s;
 }
 
 .button .button__text {
   transform: translateX(16px);
-  color: #fff;
+  color: white;
   font-weight: 600;
-  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  white-space: nowrap;
 }
 
 .button .button__icon {
@@ -1192,7 +1199,7 @@ footer p {
 
 .button .svg {
   width: 24px;
-  fill: #fff;
+  fill: white;
 }
 
 .button:hover {
@@ -1217,7 +1224,7 @@ footer p {
 }
 
 .button__icon--left {
-  transform: translateX(0); /* Mueve el segundo span completamente a la izquierda */
+  transform: translateX(0);
 }
 
 
@@ -1227,15 +1234,16 @@ footer p {
 
 
 
+/**Boton de Contacto Info**/
 .button-name {
   align-items: center;
   appearance: none;
-  background-color: yellow;
-  border-radius: 4px;
+  background-color: #121725;
+  border-radius: 1px;
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: rebeccapurple;
+  color: white;
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono", monospace;
@@ -1244,19 +1252,20 @@ footer p {
   line-height: 1;
   list-style: none;
   overflow: hidden;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 30px;
+  padding-right: 30px;
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: box-shadow .15s, transform .15s;
+  transition: box-shadow 0.15s, transform 0.15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
-  font-size: 24px;
+  font-size: 19px;
 }
+
 
 
 
