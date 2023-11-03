@@ -433,43 +433,63 @@ section {
 }
  
 
-  
+
+/** Iconos de Tw, In , GitHub **/
+
 #socials-containerr {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .iconn {
-  width: 65px; /* Ancho de los iconos */
-  height: 65px; /* Alto de los iconos */
-  margin: 15px; /* Espacio entre los iconos */
-  cursor: pointer; /* Cambiar el cursor al pasar sobre los iconos */
-  transition: transform 0.2s; /* Agregar una transición suave al hacer hover */
+  width: 50px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .iconn:hover {
-  transform: scale(1.1); /* Escalar el icono al hacer hover */
-  transition: transform 0.2s; /* Agregar una transición suave al hacer hover */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra al hacer hover */
+  transform: scale(1.1);
+  animation: move 0.3s ease-in-out;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, 0); /* Mueve el ícono hacia la derecha */
+  }
+  50% {
+    transform: translate(0, 0); /* Restablece la posición original */
+  }
+  75% {
+    transform: translate(-5px, 0); /* Mueve el ícono hacia la izquierda */
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 
-/* Estilos específicos para cada icono */
-#socials-containerr img[alt="My LinkedIn profile"] {
-  background-color: #0077B5; /* Color de fondo de LinkedIn */
-  border-radius: 50%; /* Hacer el icono redondo */
-}
 
-#socials-containerr img[alt="My Github profile"] {
-  background-color: #333; /* Color de fondo de Github */
-  border-radius: 50%; /* Hacer el icono redondo */
-}
 
-#socials-containerr img[alt="My Twitter profile"] {
-  background-color: #1DA1F2; /* Color de fondo de Twitter */
-  border-radius: 50%; /* Hacer el icono redondo */
-}
+
+ 
+
+
+
+
+
+
+
 
 
 /* ICONS */
