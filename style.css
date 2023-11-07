@@ -452,31 +452,18 @@ section {
   height: auto;
   margin: 10px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: color 0.2s ease-in-out;
 }
 
 .iconn:hover {
-  transform: scale(1.1);
-  animation: move 0.3s ease-in-out;
+  color: red; /* Cambia el color al pasar el mouse */
 }
 
-@keyframes move {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(5px, 0); /* Mueve el ícono hacia la derecha */
-  }
-  50% {
-    transform: translate(0, 0); /* Restablece la posición original */
-  }
-  75% {
-    transform: translate(-5px, 0); /* Mueve el ícono hacia la izquierda */
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
+
+
+
+
+
 
 
 
