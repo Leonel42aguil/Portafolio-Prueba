@@ -29,33 +29,63 @@ a,
   transition: all 300ms ease;
 }
 
-/* DESKTOP NAV */
-nav,
-.nav-links {
+/*! NavBar-Home */
+
+nav, .nav-links {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
-
+  height: 9vh;
+  position: sticky;
+  top: 0; /* La barra de navegación estará pegada arriba cuando haces scroll */
+  background-color: #333; /* Puedes ajustar el color de fondo a tu preferencia */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra para dar profundidad */
+  z-index: 100; /* Asegura que la barra de navegación esté por encima de otros elementos */
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
-  position: relative;
-  top: -45px;
+  font-size: 1.2rem; /* Tamaño de fuente ligeramente reducido para una apariencia más elegante */
+  margin: 0;
+  padding: 0;
 }
 
-.entry-animation {
-  opacity: 0; /* Inicialmente, oculta los elementos */
-  transform: translateY(20px); /* Desplázalos hacia abajo */
-  transition: opacity 500ms ease, transform 500ms ease; /* Aplica transiciones de opacidad y transformación */
-  color: rebeccapurple;
+.nav-links li {
+  display: inline; /* Para que los elementos de la lista estén en línea */
 }
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff; /* Color del texto en los enlaces */
+  transition: color 0.3s; /* Transición suave para el cambio de color de texto */
+}
+
+.nav-links a:hover {
+  color: #ff9900; /* Color del texto en los enlaces al pasar el mouse */
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff; 
+  position: relative;
+  bottom: 0vh; /* Alinea el elemento a la misma altura que el navbar */
+  margin-right: 80px;
+}
+
+
+
+/* .entry-animation {
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 500ms ease, transform 500ms ease; 
+  color: red;
+} */
 
 
 
@@ -72,13 +102,6 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
-.logo {
-  font-size: 2rem;
-  color: #333;
-  position: relative;
-  bottom: 45px;
-  right: 35px;
-}
 
 @keyframes bounceAndColor {
   0% {
@@ -476,7 +499,7 @@ section {
 
 
 
-
+ 
 
 
 /* ICONS */
