@@ -644,15 +644,21 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
-#about {
+
+
+
+
+
+
+
+/*? ABOUT */
+/* #about {
   position: relative;
   top: 144px;
 }
 
 @media screen and (max-width: 768px) {
   #about {
-    /* position: relative; */
     top: 110px;
   }
 }
@@ -672,7 +678,7 @@ section {
 
 @media screen and (max-width: 767px) {
   .about-details-container {
-    margin-top: 450px; /* Ajustar la cantidad de píxeles según tu preferencia */
+    margin-top: 450px; 
   }
 }
 
@@ -706,7 +712,6 @@ section {
   height: 80%;
 }
 
-/* Estilos para todas las pantallas */
 .section-container-home {
   display: flex;
   justify-content: flex-start;
@@ -720,7 +725,6 @@ section {
   width: 1300px;
   margin-left: -60px;
   margin-right: 80px;
-  /* top: 5110px;  */
 }
 
 .square-image {
@@ -728,7 +732,6 @@ section {
   width: 100%;
   padding-top: 100%;
   overflow: hidden;
-  /* background-color: rebeccapurple; */
   background-color: #FFFFFF;
   margin-right: 640px;
   margin-top: -10px;
@@ -739,14 +742,12 @@ section {
   position: absolute;
   top: 0;
   left: 200px;
-  /* left: 140px; */
-  width: 50%; /*modifi*/
+  width: 50%; 
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
-/* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
   .section-container-home {
     height: 40vh;
@@ -768,7 +769,7 @@ section {
   border-radius: 5px;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
-  transition: font-size 0.5s ease; /* Animación de transición para el cambio de tamaño de fuente */
+  transition: font-size 0.5s ease; 
 }
 
 .text-container p {
@@ -777,7 +778,6 @@ section {
   text-align: justify;
 }
 
-/* Media query para pantallas de hasta 768px de ancho (por ejemplo, tablets y teléfonos) */
 @media (max-width: 768px) {
   .text-container {
     padding: 5px;
@@ -787,11 +787,80 @@ section {
   }
 }
 
-/* Animación al pasar el cursor sobre .text-container */
 .text-container:hover {
-  /* font-size: 23px;  */
   font-size: 22px;  
+} */
+/* ? */
+
+
+#about{
+  padding: 80px 0;
+  color: #ababab;
 }
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1{
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width:100%;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* EXPERIENCE SECTION */
 #experience {
