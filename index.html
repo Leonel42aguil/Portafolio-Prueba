@@ -203,15 +203,39 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora magnam illo et error at voluptatum impedit eligendi officiis soluta amet neque reprehenderit aliquid, perspiciatis placeat tempore earum. Laudantium, deleniti voluptates?</p>
 
             <div class="tab-titles">
-              <p class="tab-links active-link">Skills</p>
-              <p class="tab-links">Certificados</p>
-              <p class="tab-links">Estudios</p>
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('certificado')" >Certificados</p>
+              <p class="tab-links" onclick="opentab('estudio')">Estudios</p>
             </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI?UX</span><br/>Desinging web/app Interfaces</li>
+                <li><span>Web Development</span><br/>Web app Development</li>
+                <li><span>App Development</span><br/>Building Android/IOS</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="certificado">
+              <ul>
+                <li><span>2021- Current</span><br/> Ux/app Interfaces</li>
+                <li><span>2011-2015</span><br/>Web app</li>
+                <li><span>2021-2024</span><br/>Android/IOS</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="estudio">
+              <ul>
+                <li><span>2020</span><br/>Icep</li>
+                <li><span>2016</span><br/>Lorenzo</li>
+                <li><span>2019</span><br/>MOyano</li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
-
 
 
 
@@ -621,11 +645,31 @@
   <p>&#169; 2023 Leonel Aguilera. Full Stack</p>
 </footer>
 </div>
-<script src="script.js"></script>
 
+<script src="script.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
 
+
+<!-- ? Funcionalidad - ABOUT -->
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+
+<!-- ? -->
     <script>
       const demoButton1 = document.getElementById('demoButton1');
       demoButton1.addEventListener('click', () => {
