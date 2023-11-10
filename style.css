@@ -13,6 +13,7 @@ body {
   font-family: "Poppins", sans-serif;
 
    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+   background-color: #183040
 }
 
 html {
@@ -20,7 +21,8 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  /* color: rgb(85, 85, 85);      */
+  color: white;
 }
 
 /* TRANSITION */
@@ -43,7 +45,7 @@ nav {
   height: 9vh;
   position: sticky;
   top: 0; /* La barra de navegación estará pegada arriba cuando haces scroll */
-  background-color: #333; /* Puedes ajustar el color de fondo a tu preferencia */
+  background-color: #475965;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra para dar profundidad */
   z-index: 100; /* Asegura que la barra de navegación esté por encima de otros elementos */
 }
@@ -67,7 +69,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #ff9900; /* Color del texto en los enlaces al pasar el mouse */
+  color: #FAEBAA; 
 }
 
 .logo {
@@ -77,6 +79,8 @@ nav {
   bottom: 0vh; /* Alinea el elemento a la misma altura que el navbar */
   margin-right: 80px;
 }
+
+/*! **/
 
 
 
@@ -310,7 +314,7 @@ section {
   font-size: 1.4rem;
   line-height: 1.6;
   text-align: center;
-  color: #555;
+  color: white;
   margin-bottom: 20px;
   max-width: 800px;
   margin-left: auto;
@@ -347,10 +351,15 @@ section {
   margin-bottom: 2.3rem;
 }
 
+/** Titulo-Name "Leonel Aguilera" **/
+
 .title {
   font-size: 4.6rem;
   text-align: center;
+  color: white;
 }
+
+/****/
 
 .title-about {
   font-size: 3rem;
