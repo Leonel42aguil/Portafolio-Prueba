@@ -64,6 +64,7 @@
         </div>
       </div>
     </nav>
+    <!--  -->
 
     <section id="profile">
         <div class="section__pic-container">
@@ -707,6 +708,13 @@
     // Eliminar el enlace después de la descarga
     document.body.removeChild(a);
   });
+</script>
+
+<script>
+  window.addEventListener("scroll", function() {
+  var nav = document.querySelector("nav");
+  nav.classList.toggle("scrolled", window.scrollY > 0);
+});
 </script>
 
 </body>

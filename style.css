@@ -33,6 +33,7 @@ a,
 
 /*! NavBar-Home */
 
+/* NavBar-Home */
 nav, .nav-links {
   display: flex;
   margin: 0;
@@ -44,41 +45,72 @@ nav {
   align-items: center;
   height: 9vh;
   position: sticky;
-  top: 0; /* La barra de navegación estará pegada arriba cuando haces scroll */
+  top: 0;
   background-color: #475965;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra para dar profundidad */
-  z-index: 100; /* Asegura que la barra de navegación esté por encima de otros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: all 0.3s;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.2rem; /* Tamaño de fuente ligeramente reducido para una apariencia más elegante */
+  font-size: 1.2rem;
   margin: 0;
   padding: 0;
+  transition: transform 0.3s, font-size 0.3s; /* Agregamos una transición para suavizar el movimiento y el cambio de tamaño */
 }
 
 .nav-links li {
-  display: inline; /* Para que los elementos de la lista estén en línea */
+  display: inline;
+  transition: transform 0.3s; /* Agregamos una transición para suavizar el movimiento */
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #fff; /* Color del texto en los enlaces */
-  transition: color 0.3s; /* Transición suave para el cambio de color de texto */
+  color: #fff;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #FAEBAA; 
+  color: #FAEBAA;
 }
 
 .logo {
   font-size: 2rem;
-  color: #fff; 
+  color: #fff;
   position: relative;
-  bottom: 0vh; /* Alinea el elemento a la misma altura que el navbar */
+  bottom: 0vh;
   margin-right: 80px;
+  transition: all 0.3s;
 }
+
+/* Nuevas reglas para desplazar el texto hacia el centro y cambiar el tamaño al hacer scroll */
+nav.scrolled {
+  height: 6vh;
+}
+
+nav.scrolled .logo {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+nav.scrolled .nav-links {
+  transform: translateX(-100%); /* Ajusta el valor para mover más a la izquierda y centrar */
+  font-size: 1.4rem; /* Ajusta el tamaño de la fuente al hacer scroll */
+}
+
+nav.scrolled .nav-links li {
+  transform: translateX(0); /* Restablece la transformación para dejarlos lineales */
+}
+
+/* **/
+
+
+
+
+
+
 
 /*! **/
 
@@ -309,6 +341,9 @@ section {
 .section__text p {
   font-weight: 600;
 }
+
+
+/*! Texto: "Hola. me llamo" */
 
 .section__text__p1 {
   font-size: 1.4rem;
@@ -1274,13 +1309,13 @@ footer p {
 
 
 /**Boton de Contacto Info**/
+
 .button-name {
   align-items: center;
   appearance: none;
   background-color: #121725;
   border-radius: 1px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
   color: white;
   cursor: pointer;
@@ -1304,8 +1339,7 @@ footer p {
   will-change: box-shadow, transform;
   font-size: 19px;
 }
-
-
+/****/
 
 
 
