@@ -800,39 +800,58 @@ section {
   color: #ababab;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.about-col-1{
+.about-col-1 {
   flex-basis: 30%;
+  margin-top: -90px;
+  position: relative; /* Añadimos posición relativa al contenedor */
 }
 
 .about-col-1 img {
-  width:82%;
+  width: 82%;
   border-radius: 45px;
+  position: absolute; /* Cambiamos a posición absoluta */
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease; /* Agregamos una transición para que el cambio sea suave */
 }
+
+/* Mostramos la segunda imagen por defecto con opacidad 0 */
+.about-col-1 img:nth-child(2) {
+  opacity: 0;
+}
+
+/* Al pasar el mouse, mostramos la segunda imagen */
+.about-col-1:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+
 
 .about-col-2 {
   flex-basis: 70%;
+  margin-top: -90px;
 }
 
 .sub-title {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 600;
   color: #fff;
 }
 
 .tab-titles{
   display: flex;
-  margin: 20px 0 40px;
+  margin: 30px 0 30px;
 }
 
 .tab-links{
   margin-right: 50px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -841,7 +860,7 @@ section {
 .tab-links::after{
   content: '';
   width: 0;
-  height: 3px;
+  height: 4px;
   background: #ff004f;
   position: absolute;
   left: 0;
@@ -850,12 +869,12 @@ section {
 }
 
 .tab-links.active-link::after{
-  width: 50%;
+  width: 60%;
 }
 
 .tab-contents ul li {
   list-style: none;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .tab-contents ul li span{
