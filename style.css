@@ -793,9 +793,9 @@ section {
 /* ? */
 
 
-#about{
-  padding: 280px 290px;
-  /* background-color: #0F1F2A; */
+#about {
+  padding: 230px; /* Ajusta el padding según tu preferencia */
+  margin: 0 auto; /* Centra el contenido en el contenedor */
   background-color: #142B37;
   color: #ababab;
 }
@@ -809,29 +809,25 @@ section {
 .about-col-1 {
   flex-basis: 30%;
   margin-top: -90px;
-  position: relative; /* Añadimos posición relativa al contenedor */
+  position: relative;
 }
 
 .about-col-1 img {
   width: 82%;
   border-radius: 45px;
-  position: absolute; /* Cambiamos a posición absoluta */
+  position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 0.3s ease; /* Agregamos una transición para que el cambio sea suave */
+  transition: opacity 0.3s ease;
 }
 
-/* Mostramos la segunda imagen por defecto con opacidad 0 */
 .about-col-1 img:nth-child(2) {
   opacity: 0;
 }
 
-/* Al pasar el mouse, mostramos la segunda imagen */
 .about-col-1:hover img:nth-child(2) {
   opacity: 1;
 }
-
-
 
 .about-col-2 {
   flex-basis: 70%;
@@ -844,12 +840,12 @@ section {
   color: #fff;
 }
 
-.tab-titles{
+.tab-titles {
   display: flex;
   margin: 30px 0 30px;
 }
 
-.tab-links{
+.tab-links {
   margin-right: 50px;
   font-size: 20px;
   font-weight: 500;
@@ -857,7 +853,7 @@ section {
   position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
   content: '';
   width: 0;
   height: 4px;
@@ -868,7 +864,7 @@ section {
   transition: 0.5s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
   width: 60%;
 }
 
@@ -877,17 +873,18 @@ section {
   margin: 20px 0;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li span {
   color: #b54769;
 }
 
-.tab-contents{
+.tab-contents {
   display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
   display: block;
 }
+
 
 
 
